@@ -4,3 +4,6 @@
 <%# Invoke stimulus HelloController %>
 <div data-controller="hello">
 </div>
+
+<%# Mount Svelte component with Turbo Mount %>
+<%= turbo_mount("SvelteCounter", props: { count: 5 }, class: "m-5") %>

@@ -63,3 +63,5 @@ group :test do
 end
 
 gem "vite_rails", "~> 3.0"
+
+gem "turbo-mount", "~> 0.4.1"
