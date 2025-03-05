@@ -196,11 +196,6 @@ GEM
     pp (0.6.2)
       prettyprint
     prettyprint (0.2.0)
-    propshaft (1.1.0)
-      actionpack (>= 7.0.0)
-      activesupport (>= 7.0.0)
-      rack
-      railties (>= 7.0.0)
     psych (5.2.3)
       date
       stringio
@@ -381,7 +376,6 @@ DEPENDENCIES
   jsbundling-rails
   kamal
   pg (~> 1.1)
-  propshaft
   puma (>= 5.0)
   rails (~> 8.0.1)
   rubocop-rails-omakase
