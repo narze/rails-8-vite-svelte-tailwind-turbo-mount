@@ -6,4 +6,10 @@
 </div>
 
 <%# Mount Svelte component with Turbo Mount %>
-<%= turbo_mount("SvelteCounter", props: { count: 5 }, class: "m-5") %>
+<%= turbo_mount("SvelteCounter", props: { count: 5 }, class: "m-5") do |controller_name| %>
+  <div data-<%= controller_name %>-target="mount"></div>
+
+  <p>
+    Values passed from Svelte -> Stimulus -> ERB <%= text_field_tag :count, 5, data: { "#{controller_name}-target": "input" }, class: "border px-4 py-2 rounded", type: "number" %>
+  </p>
+<% end %>
